@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="description" content="卡塞尔学院官网，卡塞尔学院(CASSELL)是一所位于美国伊利诺伊州芝加哥远郊的私立大学，和芝加哥大学是联谊学校，每年都在密歇根湖联合举办马术、赛艇、热气球、游泳等校际比赛活动，此外还有更加广泛的学术交流，主要研究方向是古代爬行类动物，前身是秘党，在引入现代化教育机制成立为学院后以德国著名屠龙世家“卡塞尔”的姓氏命名，主要功能是培养优秀的混血种人才、收集研究关于龙族的一切信息、研制新型的杀伤性武器，以及尽一切力量屠龙"/>
+        <meta name="keywords" content="龙族,密党,卡塞尔,casell"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="referrer" content="no-referrer">
+        <title>卡塞尔学院 守夜论坛</title>
+        <link rel="icon" href="../picture/cassellSign.png" type="image/png">
+        <style type="text/css">
+            @font-face 
+            {
+                font-family: '华宋';
+                src: url("../A/STSONG.TTF");
+            }
+            .picture
+            {
+                border-radius: 30px;
+                border: #E1CD92;
+                box-shadow: 0px 2px 6px #CABC87;
+            }
+            .nav 
+            {
+                position: fixed;
+                top: 10px;
+                float: left;
+                width: 99%;
+                height: 60px;
+                margin-left: 10px;
+            }
+            .text 
+            {
+                font-size: x-large;
+                font-family: '华宋',宋体,楷体;
+                color: white;
+            }
+            .goldText 
+            {
+                font-family: '华宋',宋体,楷体;
+                color: #E1CD92;
+                margin: 0 auto;
+            }
+            .greenText 
+            {
+                font-family: '华宋',宋体,楷体;
+                color: #1D3E31;
+                margin: 0 auto;
+            }
+            .whiteText 
+            {
+                font-family: '华宋',宋体,楷体;
+                color: white;
+                margin: 0 auto;
+            }
+            .navText 
+            {
+                font-size: x-large;
+                font-family: '华宋',宋体,楷体;
+                color: white;
+                margin-left: 15px;
+                margin-right: 15px;
+            }
+            .navButton 
+            {
+                height: 40px;
+                width: 120px;
+                border: #E1CD92;
+                background-color: #1D3E31;
+                font-family: '华宋',宋体,楷体;
+                color: white;
+                font-size: x-large;
+                margin-left: 20px;
+                border-radius: 30px;
+                font-weight: bolder;
+                box-shadow: 0px 2px 6px #CABC87;
+            }
+            .tittlePicture
+            {
+                background-color: #1D3E31;
+                width: 90%;
+                border-radius: 30px;
+                box-shadow: 0px 2px 6px #CABC87;
+                margin: 0 auto;
+            }
+            .tittlePicture2
+            {
+                background-color: #1D3E31;
+                width: 70%;
+                border-radius: 30px;
+                box-shadow: 0px 2px 6px #CABC87;
+                margin: 0 auto;
+            }
+            .paddingText 
+            {  
+                padding: 5px;
+                border-style: solid;
+                border-width: 2px;
+                border-color: #1D3E31;
+                border-style: double;
+                width: 50%;
+                margin: 0 auto;
+            }
+            .buttonClass
+            {
+                border-radius: 30px;
+                font-weight: bolder;
+                box-shadow: 0px 2px 6px #CABC87;
+                border: #E1CD92;
+                background-color: #1D3E31;
+                font-family: '华宋',宋体,楷体;
+                color: white;
+                font-size: x-large;
+                margin-left: 20px;
+                margin-right: 20px;
+                margin-bottom: 20px;
+                margin-top: 20px;
+            }
+            .Submit
+            {
+                position: fixed;
+                right: 20px;
+                top: 70px;
+            }
+            body
+            {
+                background-image: url(../picture/homeBG.jpg);
+                background-size: 100%;
+                background-attachment: fixed;
+            }
+            .Andr
+            {
+                position: fixed;
+                right: 20px;
+                top: 130px;
+            }
+        </style>
+    </head>
+    <body oncontextmenu="return false">
+        <div class="nav">
+            <img src="../picture/cassellSign.png" height="40px" title="卡塞尔学院" align="center">
+            <font class="navText">
+                卡塞尔学院 CASSELL
+            </font> 
+            <font class="navText">
+                |
+            </font>
+            <img src="../picture/信息.png" height="40px" title="学院介绍" align="center" onclick="ClickInformation()">
+            <button class="navButton" id="path" onclick="ClickInformation()">
+                学院介绍
+            </button>
+            <font class="navText">
+                |
+            </font>
+            <img src="../picture/覆盖.png" height="40px" title="报名选课" align="center" onclick="ClickClass()">
+            <button class="navButton" onclick="ClickClass()">
+                报名选课
+            </button>
+            <font class="navText">
+                |
+            </font>
+            <img src="../picture/结构.png" height="40px" title="参加组织" align="center" onclick="ClickOrg()">
+            <button class="navButton" onclick="ClickOrg()">
+                参加组织
+            </button>
+            <font class="navText">
+                |
+            </font>
+            <img src="../picture/论坛.png" height="40px" title="守夜论坛" align="center" onclick="ClickChat()">
+            <button class="navButton" onclick="ClickChat()">
+                守夜论坛
+            </button>
+        </div>
+        <img src="../picture/注册.png" class="Submit" width="50px" title="登录" onclick="ClickSubmit()">
+        <img src="../picture/网络.png" class="Andr" width="50px" title="手机" onclick="ClickAndr()">
+        <br><br><br>
+        <div align="center">
+            <img src="../picture/cassellSign.png" width="10%" title="卡塞尔学院">
+            <br><br>
+            <h1 class="goldText">
+                卡 塞 尔 学 院
+            </h1>
+            <hr width="40%" color="#1D3E31">
+            <h3 class="goldText">
+                C A S S E L L &nbsp; C O L L E G E
+            </h3>
+            <br>
+            <h1 class="goldText">
+                守 夜 论 坛
+            </h1>
+        </div>
+        <br>
+        <hr color="#1D3E31">
+        <br>
+        <div class="tittlePicture" align="center">
+            <h1 class="goldText">
+                守 夜 新 闻
+            </h1>
+        </div>
+        <br>
+        <div class="paddingText">
+            <h2 class="whiteText">
+                格尔曼·斯帕罗 成功狩猎 荣格·冯·赫尔佐格
+            </h2>
+        </div>
+        <br>
+        <div class="tittlePicture" align="center">
+            <h1 class="goldText">
+                守 夜 论 坛
+            </h1>
+        </div>
+        <br>
+        <div class="paddingText">
+            <h2 class="whiteText">
+                Loading
+            </h2>
+        </div>
+        <br>
+        <div class="tittlePicture" align="center">
+            <h1 class="goldText">
+                旗 下 组 织
+            </h1>
+        </div>
+        <br>
+        <div align="center">
+            <button class="buttonClass"  onclick="ClickO1()">
+                &nbsp;塔罗会&nbsp;
+            </button>
+            <button class="buttonClass"  onclick="ClickO2()">
+                &nbsp;HHM&nbsp;
+            </button>
+        </div>
+        <br>
+        <div class="tittlePicture" align="center">
+            <h1 class="goldText">
+                影 视
+            </h1>
+        </div>
+        <br>
+        <div align="center">
+            <button class="buttonClass"  onclick="ClickV1()">
+                &nbsp;bilibili&nbsp;
+            </button>
+            <button class="buttonClass"  onclick="ClickV2()">
+                &nbsp;影视工场&nbsp;
+            </button>
+            <button class="buttonClass"  onclick="ClickV3()">
+                &nbsp;AnFuns&nbsp;
+            </button>
+            <button class="buttonClass"  onclick="ClickV4()">
+                &nbsp;AGE动漫&nbsp;
+            </button>
+            <button class="buttonClass"  onclick="ClickV5()">
+                &nbsp;次元城动画&nbsp;
+            </button>
+            <button class="buttonClass"  onclick="ClickV6()">
+                &nbsp;音范丝&nbsp;
+            </button>
+            <button class="buttonClass"  onclick="ClickV7()">
+                &nbsp;大米星球&nbsp;
+            </button>
+            <button class="buttonClass"  onclick="ClickV8()">
+                &nbsp;摄图视频&nbsp;
+            </button>
+        </div>
+        <br>
+        <div class="tittlePicture" align="center">
+            <h1 class="goldText">
+                音 乐
+            </h1>
+        </div>
+        <br>
+        <div align="center">
+            <button class="buttonClass"  onclick="ClickM1()">
+                &nbsp;网易云音乐&nbsp;
+            </button>
+            <button class="buttonClass"  onclick="ClickM2()">
+                &nbsp;爱听音乐网&nbsp;
+            </button>
+            <button class="buttonClass"  onclick="ClickM3()">
+                &nbsp;HiFiNi&nbsp;
+            </button>
+            <button class="buttonClass"  onclick="ClickM4()">
+                &nbsp;牛五音乐网&nbsp;
+            </button>
+            <button class="buttonClass"  onclick="ClickM5()">
+                &nbsp;TTSMaker&nbsp;
+            </button>
+            <button class="buttonClass"  onclick="ClickM6()">
+                &nbsp;vocalremover&nbsp;
+            </button>
+            <button class="buttonClass"  onclick="ClickM7()">
+                &nbsp;AudioMass&nbsp;
+            </button>
+            <button class="buttonClass"  onclick="ClickM8()">
+                &nbsp;Elevenlabs&nbsp;
+            </button>
+        </div>
+        <br>
+        <div class="tittlePicture" align="center">
+            <h1 class="goldText">
+                图 片
+            </h1>
+        </div>
+        <br>
+        <div align="center">
+            <button class="buttonClass"  onclick="ClickP1()">
+                &nbsp;Photokit&nbsp;
+            </button>
+            <button class="buttonClass"  onclick="ClickP2()">
+                &nbsp;Jpghd&nbsp;
+            </button>
+            <button class="buttonClass"  onclick="ClickP3()">
+                &nbsp;Canva&nbsp;
+            </button>
+            <button class="buttonClass"  onclick="ClickP4()">
+                &nbsp;花瓣网&nbsp;
+            </button>
+            <button class="buttonClass"  onclick="ClickP5()">
+                &nbsp;免抠图片网&nbsp;
+            </button>
+            <button class="buttonClass"  onclick="ClickP6()">
+                &nbsp;Pixabay&nbsp;
+            </button>
+            <button class="buttonClass"  onclick="ClickP7()">
+                &nbsp;Picpicai&nbsp;
+            </button>
+            <button class="buttonClass"  onclick="ClickP8()">
+                &nbsp;度度网&nbsp;
+            </button>
+        </div>
+        <br>
+        <div class="tittlePicture" align="center">
+            <h1 class="goldText">
+                资 源
+            </h1>
+        </div>
+        <br>
+        <div align="center">
+            <button class="buttonClass"  onclick="ClickP1()">
+                &nbsp;PolyHaven&nbsp;
+            </button>
+            <button class="buttonClass"  onclick="ClickP2()">
+                &nbsp;爱给网&nbsp;
+            </button>
+            <button class="buttonClass"  onclick="ClickP3()">
+                &nbsp;站长素材&nbsp;
+            </button>
+            <button class="buttonClass"  onclick="ClickP4()">
+                &nbsp;Koyso&nbsp;
+            </button>
+            <button class="buttonClass"  onclick="ClickP5()">
+                &nbsp;Blenderco&nbsp;
+            </button>
+            <button class="buttonClass"  onclick="ClickP6()">
+                &nbsp;钟馗之眼&nbsp;
+            </button>
+        </div>
+        <br>
+        <div class="tittlePicture" align="center">
+            <h1 class="goldText">
+                A I
+            </h1>
+        </div>
+        <br>
+        <div align="center">
+            <button class="buttonClass"  onclick="ClickA1()">
+                &nbsp;Ai-bot&nbsp;
+            </button>
+            <button class="buttonClass"  onclick="ClickA2()">
+                &nbsp;核桃AI&nbsp;
+            </button>
+            <button class="buttonClass"  onclick="ClickA3()">
+                &nbsp;汇语AI&nbsp;
+            </button>
+            <button class="buttonClass"  onclick="ClickA4()">
+                &nbsp;AiBang&nbsp;
+            </button>
+        </div>
+        <br>
+        <script type="text/javascript">
+            document.addEventListener("keydown", function(F12)
+                {
+                    if(F12.key == 'F12')
+                    {
+                        F12.preventDefault()
+                    }
+                }
+            )
+            function ClickInformation()
+            {
+                window.open("../cassell.html",'_self')
+            }
+            function ClickClass()
+            {
+                window.open("cassellClass.html",'_self')
+            }
+            function ClickOrg()
+            {
+                window.open("cassellOrg.html",'_self')
+            }
+            function ClickChat()
+            {
+                window.open("cassellChat.html",'_self')
+            }
+            function ClickSubmit()
+            {
+                window.open("cassellLog.html",'_self')
+            }
+            function ClickAndr()
+            {
+                window.open("cassellChatA.html",'_self')
+            }
+            function ClickV1()
+            {
+                window.open("https://www.bilibili.com")
+            }
+            function ClickV2()
+            {
+                window.open("https://www.ysgc.fun")
+            }
+            function ClickV3()
+            {
+                window.open("https://anfuns.cc")
+            }
+            function ClickV4()
+            {
+                window.open("https://m.agedm.org")
+            }
+            function ClickV5()
+            {
+                window.open("https://www.cycanime.com")
+            }
+            function ClickV6()
+            {
+                window.open("https://www.yinfans.cc")
+            }
+            function ClickV7()
+            {
+                window.open("https://www.shguhao.com")
+            }
+            function ClickV8()
+            {
+                window.open("https://699pic.com/media")
+            }
+            function ClickM1()
+            {
+                window.open("https://music.163.com")
+            }
+            function ClickM2()
+            {
+                window.open("http://www.2t58.com")
+            }
+            function ClickM3()
+            {
+                window.open("https://www.hifini.com")
+            }
+            function ClickM4()
+            {
+                window.open("http://www.6002255.com")
+            }
+            function ClickM5()
+            {
+                window.open("https://ttsmaker.cn")
+            }
+            function ClickM6()
+            {
+                window.open("https://vocalremover.org/zh")
+            }
+            function ClickM7()
+            {
+                window.open("https://audiomass.co")
+            }
+            function ClickM8()
+            {
+                window.open("https://elevenlabs.io")
+            }
+            function ClickP1()
+            {
+                window.open("https://photokit.com/editor/?lang=zh")
+            }
+            function ClickP2()
+            {
+                window.open("https://jpghd.com")
+            }
+            function ClickP3()
+            {
+                window.open("https://www.canva.cn")
+            }
+            function ClickP4()
+            {
+                window.open("https://huaban.com")
+            }
+            function ClickP5()
+            {
+                window.open("https://miankoutupian.com")
+            }
+            function ClickP6()
+            {
+                window.open("https://pixabay.com/zh")
+            }
+            function ClickP7()
+            {
+                window.open("https://picpicai.com/zh")
+            }
+            function ClickP8()
+            {
+                window.open("https://www.topdodo.com")
+            }
+            function ClickR1()
+            {
+                window.open("https://polyhaven.com/zh")
+            }
+            function ClickR2()
+            {
+                window.open("https://www.aigei.com")
+            }
+            function ClickR3()
+            {
+                window.open("https://sc.chinaz.com")
+            }
+            function ClickR4()
+            {
+                window.open("https://koyso.com")
+            }
+            function ClickR5()
+            {
+                window.open("https://blenderco.cn")
+            }
+            function ClickR6()
+            {
+                window.open("https://www.zoomeye.org/statistics")
+            }
+            function ClickA1()
+            {
+                window.open("https://ai-bot.cn/")
+            }
+            function ClickA2()
+            {
+                window.open("https://ai.minihuo.com")
+            }
+            function ClickA3()
+            {
+                window.open("https://chat.intercat.cn")
+            }
+            function ClickA4()
+            {
+                window.open("https://aibang.run")
+            }
+        </script>
+    </body>
+    <br>
+    <hr color="#1D3E31">
+    <footer align="center">
+        <font color="#E1CD92">
+                Creator &COPY; \W/ - REHOBOAM - ZIMA PULSE - Cassell College
+        </font>
+    </footer>
+</html>

@@ -1,0 +1,1240 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="description" content="卡塞尔学院官网，卡塞尔学院(CASSELL)是一所位于美国伊利诺伊州芝加哥远郊的私立大学，和芝加哥大学是联谊学校，每年都在密歇根湖联合举办马术、赛艇、热气球、游泳等校际比赛活动，此外还有更加广泛的学术交流，主要研究方向是古代爬行类动物，前身是秘党，在引入现代化教育机制成立为学院后以德国著名屠龙世家“卡塞尔”的姓氏命名，主要功能是培养优秀的混血种人才、收集研究关于龙族的一切信息、研制新型的杀伤性武器，以及尽一切力量屠龙"/>
+        <meta name="keywords" content="龙族,密党,卡塞尔,casell"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="referrer" content="no-referrer">
+        <title>卡塞尔学院 学院介绍</title>
+        <link rel="icon" href="picture/cassellSign.png" type="image/png">
+        <style type="text/css">
+            @font-face 
+            {
+                font-family: '华宋';
+                src: url("A/STSONG.TTF");
+            } 
+            .picture
+            {
+                border-radius: 30px;
+                border: #E1CD92;
+                box-shadow: 0px 2px 6px #CABC87;
+            }
+            .nav 
+            {
+                position: fixed;
+                top: 10px;
+                float: left;
+                width: 99%;
+                height: 30px;
+                margin-left: 10px;
+            }
+            .text 
+            {
+                font-size: medium;
+                font-family: '华宋',宋体,楷体;
+                color: white;
+            }
+            .goldText 
+            {
+                font-family: '华宋',宋体,楷体;
+                color: #E1CD92;
+                margin: 0 auto;
+            }
+            .greenText 
+            {
+                font-family: '华宋',宋体,楷体;
+                color: #1D3E31;
+                margin: 0 auto;
+            }
+            .whiteText 
+            {
+                font-family: '华宋',宋体,楷体;
+                color: white;
+                margin: 0 auto;
+            }
+            .navText 
+            {
+                font-size:medium;
+                font-family: '华宋',宋体,楷体;
+                color: white;
+                margin-left: 15px;
+                margin-right: 15px;
+            }
+            .navButton 
+            {
+                height: 30px;
+                width: 100px;
+                border: #E1CD92;
+                background-color: #1D3E31;
+                font-family: '华宋',宋体,楷体;
+                color: white;
+                font-size: medium;
+                margin-left: 20px;
+                border-radius: 30px;
+                font-weight: bolder;
+                box-shadow: 0px 2px 6px #CABC87;
+            }
+            .tittlePicture
+            {
+                background-color: #1D3E31;
+                width: 90%;
+                border-radius: 30px;
+                box-shadow: 0px 2px 6px #CABC87;
+                margin: 0 auto;
+            }
+            .tittlePicture2
+            {
+                background-color: #1D3E31;
+                width: 70%;
+                border-radius: 30px;
+                box-shadow: 0px 2px 6px #CABC87;
+                margin: 0 auto;
+            }
+            .tittlePicture3
+            {
+                background-color: #1D3E31;
+                width: 50%;
+                border-radius: 30px;
+                box-shadow: 0px 2px 6px #CABC87;
+                margin: 0 auto;
+            }
+            .paddingText 
+            {  
+                padding: 5px;
+                border-style: solid;
+                border-width: 2px;
+                border-color: #1D3E31;
+                border-style: double;
+                width: 90%;
+                margin: 0 auto;
+            }
+            .Submit
+            {
+                position: fixed;
+                right: 10px;
+                top: 140px;
+            }            
+            .Andr
+            {
+                position: fixed;
+                right: 10px;
+                top: 190px;
+            }
+        </style>
+    </head>
+    <body style="background-image: url(picture/homeBG.jpg);
+    background-size: 100%;
+    background-attachment: fixed;" oncontextmenu="return false">
+        <div class="nav">
+            <img src="picture/cassellSign.png" height="40px" title="卡塞尔学院" align="center">
+            <font class="navText">
+                卡塞尔学院 CASSELL
+            </font>
+            <br>
+            <img src="picture/信息.png" height="40px" title="学院介绍" align="center" onclick="ClickInformation()">
+            <button class="navButton" id="path" onclick="ClickInformation()">
+                学院介绍
+            </button>
+            <font class="navText">
+                |
+            </font>
+            <img src="picture/覆盖.png" height="40px" title="报名选课" align="center" onclick="ClickClass()">
+            <button class="navButton" onclick="ClickClass()">
+                报名选课
+            </button>
+            <br>
+            <img src="picture/结构.png" height="40px" title="参加组织" align="center" onclick="ClickOrg()">
+            <button class="navButton" onclick="ClickOrg()">
+                参加组织
+            </button>
+            <font class="navText">
+                |
+            </font>
+            <img src="picture/论坛.png" height="40px" title="守夜论坛" align="center" onclick="ClickChat()">
+            <button class="navButton" onclick="ClickChat()">
+                守夜论坛
+            </button>
+        </div>
+        <img src="picture/注册.png" class="Submit" width="40px" title="登录" onclick="ClickSubmit()">
+        <img src="picture/网络.png" class="Andr" width="40px" title="电脑" onclick="ClickAndr()">
+        <br><br><br><br><br><br>
+        <div align="center">
+            <img src="picture/cassellSign.png" width="30%" title="卡塞尔学院">
+            <br><br>
+            <h1 class="goldText">
+                卡 塞 尔 学 院
+            </h1>
+            <hr width="80%" color="#1D3E31">
+            <h3 class="goldText">
+                C A S S E L L &nbsp; C O L L E G E
+            </h3>
+            <br>
+            <h1 class="goldText">
+                学 院 介 绍
+            </h1>
+        </div>
+        <br>
+        <hr color="#1D3E31">
+        <br>
+        <div class="tittlePicture" align="center">
+            <h1 class="goldText">
+                学院校训
+            </h1>
+        </div>
+        <br><br>
+        <div align="center">
+            <h2 class="goldText">
+                凡 王 之 血 &nbsp; &nbsp; 必 以 剑 终
+            </h2>
+        </div>
+        <!-- <br>
+        <div align="center">
+            <h2 class="goldText">
+                异 想 天 开 &nbsp; &nbsp; 脚 踏 实 地
+            </h2>
+        </div> -->
+        <br><br>
+        <div class="tittlePicture" align="center">
+            <h1 class="goldText">
+                学院背景
+            </h1>
+        </div>
+        <div align="center">
+            <br><br>
+            <img src="http://pic.qianye88.com/4kcc0753eb732-1556-37d6-a6cc-6a8eee1d7d43.jpeg" class="picture" width="80%" title="卡塞尔学院">
+            <br><br>
+        </div>
+        <div class="paddingText">
+            <h2 class="whiteText">
+                卡塞尔学院是一所位于美国伊利诺伊州芝加哥远郊的私立大学，和芝加哥大学是联谊学校，每年都在密歇根湖联合举办马术、赛艇、热气球、游泳等校际比赛活动，此外还有更加广泛的学术交流，主要研究方向是古代爬行类动物。卡塞尔学院的前身是秘党，在引入现代化教育机制成立为学院后以德国著名屠龙世家“卡塞尔”的姓氏命名，主要功能是培养优秀的混血种人才、收集研究关于龙族的一切信息、研制新型的杀伤性武器，以及尽一切力量屠龙
+            </h2>
+        </div>
+        <br><br>
+        <div class="tittlePicture" align="center">
+            <h1 class="goldText">
+                学院经历
+            </h1>
+        </div>
+        <br><br>
+        <div class="tittlePicture2" align="center">
+            <h1 class="goldText">
+                创办初期
+            </h1>
+        </div>
+        <br><br>
+        <div class="paddingText">
+            <h2 class="whiteText">
+                卡塞尔学院的前身是由混血种中的秘党组织创建，校名来自殒落的著名屠龙家族卡塞尔家族。卡塞尔学院的前身秘党，宗旨是灭杀一切纯血龙族，是混血种中坚决与龙族敌对的一派，由卡塞尔学院全体师生和七个欧洲混血种家族组成。因为历史上的屠龙家族巨大且多数都已经消亡，而在新的时期，学院组织没法依赖家族传承了，而必须引入现代的教育机制，在梅涅克·卡塞尔牺牲之后的一年内建立
+            </h2>
+        </div>
+        <br><br>
+        <div class="tittlePicture2" align="center">
+            <h1 class="goldText">
+                格陵兰任务
+            </h1>
+        </div>
+        <div align="center">
+            <br><br>
+            <img src="https://gd-hbimg.huaban.com/d9865d7cafc7337ea0a23148a7200222500cabd3139194-BXval4" width="80%" title="格陵兰任务">
+            <br><br>
+        </div>
+        <div class="paddingText">
+            <h2 class="whiteText">
+                2001年秋末，卡塞尔学院在格陵兰海检测到龙类胚胎的心跳信号，执行“SS”级任务“格陵兰计划”，执行部负责人冯·施耐德的六个学生下潜时进入尼伯龙根·阿瓦隆岛发现一扇门，后来胚胎突然孵化，而施耐德也因下潜救援时遭高阶巨龙袭击，导致下半面部彻底萎缩，学生们葬身冰海，造成“格陵兰阴影事件
+            </h2>
+        </div>
+        <br><br>
+        <div class="tittlePicture2" align="center">
+            <h1 class="goldText">
+                夔门计划
+            </h1>
+        </div>
+        <div align="center">
+            <br><br>
+            <img src="https://bkimg.cdn.bcebos.com/pic/314e251f95cad1c8a7863051d8687009c93d70cffb34?x-bce-process=image/format,f_auto"class="picture"  width="80%" title="夔门计划">
+            <br><br>
+        </div>
+        <div class="paddingText">
+            <h2 class="whiteText">
+                路明非入校的同年，卡塞尔学院派遣由曼斯·龙德施泰特带领的专员酒德亚纪、叶胜和塞尔玛执行“夔门计划”。后因为遇到困难，学院开启了紧急状态，召集全部A级血统以上的学员尝试破译青铜城的龙文，以解救被困的专员。最后虽由“S”级学员路明非成功破译，但由于青铜城结构的千变万化使得酒德亚纪和叶胜最终未能成功逃脱。最后不幸全队覆没
+            </h2>
+        </div>
+        <br><br>
+        <div class="tittlePicture2" align="center">
+            <h1 class="goldText">
+                青铜计划
+            </h1>
+        </div>
+        <div align="center">
+            <br><br>
+            <img src="https://hbimg.huaban.com/9cef10d07eb154a84278195bc77cd5d62c4b6aed95649-hlEuEH" width="80%" title="青铜计划">
+            <br><br>
+        </div>
+        <div class="paddingText">
+            <h2 class="whiteText">
+                后开启“青铜计划”，派遣路明非等学员执行此次任务，承载“摩尼亚赫号”前往位于中国的三峡水下与四大君主之一的青铜与火之王——诺顿进行对抗，最后成功将其击杀
+            </h2>
+        </div>
+        <br><br>
+        <div class="tittlePicture2" align="center">
+            <h1 class="goldText">
+                尼伯龙根计划
+            </h1>
+        </div>
+        <div align="center">
+            <br><br>
+            <img src="https://hbimg.huaban.com/a2e9376d83ec336bd4c7b74a4edc6f6a58f4c4667e7168-jpHkfd" width="80%" title="尼伯龙根计划">
+            <br><br>
+        </div>
+        <div class="paddingText">
+            <h2 class="whiteText">
+                是由加图索家提出的，为强化血统，突破混血种的极限，同时也为了清除混血种中的可疑血统，如超过了“临界血限”的混血种。参与这项计划，意味着获得力量，也意味着巨大的牺牲。由于尼伯龙根计划由加图索家提出，因此弗罗斯特·加图索也主张让恺撒·加图索也成为了该计划的候选人之一
+            </h2>
+        </div>
+        <br><br>
+        <div class="tittlePicture2" align="center">
+            <h1 class="goldText">
+                北京任务
+            </h1>
+        </div>
+        <div align="center">
+            <br><br>
+            <img src="https://hbimg.huaban.com/2c5235cb34a3e047aebde0345589226ddb5d4c8c447b2d-V0eUSM" width="80%" title="北京任务">
+            <br><br>
+        </div>
+        <div class="paddingText">
+            <h2 class="whiteText">
+                因为学院出动的b007号专员雷蒙德，在北京火车南站因大地与山之王耶梦加得的破坏地震而遇难，而启动了“SS”级任务为调查和夺回丢失的重要资料，校董会复信调整委派‘S’级路明非为这次任务的专员，‘A’级楚子航为他提供协助；后由楚子航单独一人成功夺得资料。由猎人网站传来了令人震惊的消息——大地与山之龙王在北京苏醒，使得全世界的混血精英纷纷飞往北京。卡塞尔学院也派遣了学生会和狮心会的部分成员前往北京寻找龙类的痕迹。最后由路明非重创、楚子航的四度爆血后，成功将大地与山之王双生子一举击杀
+            </h2>
+        </div>
+        <br><br>
+        <div class="tittlePicture2" align="center">
+            <h1 class="goldText">
+                龙渊计划
+            </h1>
+        </div>
+        <div align="center">
+            <br><br>
+            <img src="https://hbimg.huaban.com/87ce1094a13afc9c18b54697a4eaedda326ab03d9d020-2A3EW4" width="80%" title="龙渊计划">
+            <br><br>
+        </div>
+        <div class="paddingText">
+            <h2 class="whiteText">
+                卡塞尔学院在聆听到海沟深处的古龙胚胎心跳后，安排路明非、恺撒、楚子航三人结成“王牌组合”前往东京摧毁日本海中的龙类胚胎的特别任务，但因关键时刻日本分部的叛变，使得三人组暂时流落到牛郎店的高天原。源稚女与卡塞尔合作，欲与源稚生和解，而白王在此时苏醒，东京面临毁灭危机。副校长守夜人带领卡塞尔学院装备部空降东京，全面介入危机。在路明非于东京击杀白王后，成为了卡塞尔学院的学生会新晋主席，并接受了尼伯龙根计划。后卡塞尔学院了解到路明非与奥丁的战斗过程，并将战斗过程中完全龙化的路明非定性为高危混血种，全力追捕路明非
+            </h2>
+        </div>
+        <br><br>
+        <div class="tittlePicture" align="center">
+            <h1 class="goldText">
+                学院结构
+            </h1>
+        </div>
+        <br><br>
+        <div class="tittlePicture2" align="center">
+            <h1 class="goldText">
+                部门机构
+            </h1>
+        </div>
+        <br><br>
+        <div class="tittlePicture3" align="center">
+            <h1 class="goldText">
+                校董会
+            </h1>
+        </div>
+        <div align="center">
+            <br><br>
+            <img src="https://hbimg.huaban.com/14f49d2f1f0bdf7ccf70b883d041c08af47c52c223787-CwRnAV" width="80%" title="校董会">
+            <br><br>
+        </div>
+        <div class="paddingText">
+            <h2 class="whiteText">
+                卡塞尔学院的最高权力机构，秘党的现代组织机构，由出资的秘党家族出任校董，共七位校董组成。其中包括加图索家家长庞贝·加图索、洛朗家族族长伊丽莎白·洛朗、校长昂热以及“嗜龙血者”贝奥武夫等。校董会有权投票决定学院的所有问题，包括但不限于决定对违纪学生的处分、决定校长的人选、决定是否批准学生的结婚申请、决定屠龙行动计划以及处决任何人
+            </h2>
+        </div>
+        <br><br>
+        <div class="tittlePicture3" align="center">
+            <h1 class="goldText">
+                秘党元老会
+            </h1>
+        </div>
+        <div align="center">
+            <br><br>
+            <img src="https://hbimg.huaban.com/053709d5f749852c63fdd206441fdf6d7f80900349b7-C5wvuz" width="80%" class="picture" title="秘党元老会">
+            <br><br>
+        </div>
+        <div class="paddingText">
+            <h2 class="whiteText">
+                地位还要在校董会之上，是隐藏在幕后的神秘组织，为老家族的代表组成，实际掌握的权力要少于校董
+            </h2>
+        </div>
+        <br><br>
+        <div class="tittlePicture3" align="center">
+            <h1 class="goldText">
+                执行部
+            </h1>
+        </div>
+        <div align="center">
+            <br><br>
+            <img src="https://img.zcool.cn/community/011u5tc5ece9abvfjjeeod3339.jpg?x-oss-process=image/auto-orient,1/resize,m_lfit,w_1280,limit_1/sharpen,100" class="picture" width="80%" title="执行部">
+            <br><br>
+        </div>
+        <div class="paddingText">
+            <h2 class="whiteText">
+                执行部被称为是一群暴力狂，准军事机构，会向世界各地派遣专员执行任务，在卡塞尔学院总有点居高临下。前身是秘党“行动队”。任务等级分为SS、S、A、B、C、D，除了特殊的“SS”任务之外，其他任务的难度等级都是以此排名，以作分类。执行部专员包括雷蒙德、叶胜、酒德亚纪、高幂、万博倩等
+            </h2>
+        </div>
+        <br><br>
+        <div class="tittlePicture3" align="center">
+            <h1 class="goldText">
+                执行部分部
+            </h1>
+        </div>
+        <div align="center">
+            <br><br>
+            <img src="https://hbimg.huaban.com/aa9ff7e2104a60e0e101d3154f17385e07aaaee08996-ho1vI6" width="80%" title="执行部分部">
+            <br><br>
+        </div>
+        <div class="paddingText">
+            <h2 class="whiteText">
+                学院在世界各地设置了外派机构——“分部”，用于驻扎执行部专员。学院在不同地区驻扎的分部风格各不相同
+            </h2>
+        </div>
+        <br><br>
+        <div class="tittlePicture3" align="center">
+            <h1 class="goldText">
+                炼金原理部
+            </h1>
+        </div>
+        <div align="center">
+            <br><br>
+            <img src="https://photo-static-api.fotomore.com/creative/vcg/veer/612/veer-310667029.jpg" class="picture" width="80%" title="炼金原理部">
+            <br><br>
+        </div>
+        <div class="paddingText">
+            <h2 class="whiteText">
+                负责有关炼金化学的理论研究
+            </h2>
+        </div>
+        <br><br>
+        <div class="tittlePicture3" align="center">
+            <h1 class="goldText">
+                装备部
+            </h1>
+        </div>
+        <div align="center">
+            <br><br>
+            <img src="https://pic.rmb.bdstatic.com/bjh/bc912f00d100a6d0356dbf7738ee3f671116.png" width="80%" title="装备部">
+            <br><br>
+        </div>
+        <div class="paddingText">
+            <h2 class="whiteText">
+                全称“炼金术与科学工程应用研究所”，别名“瓦特阿尔海姆研究所”。不搞理论研究，工作是把科学与炼金术原理转化为实际应用，为学院提供武器，装备，研究新设备，被昂热称为“炸弹狂人集中营”
+            </h2>
+        </div>
+        <br><br>
+        <div class="tittlePicture3" align="center">
+            <h1 class="goldText">
+                信息部
+            </h1>
+        </div>
+        <div align="center">
+            <br><br>
+            <img src="https://pic4.zhimg.com/v2-32309cb960794f681fd2526234a02ff2_r.jpg" class="picture" width="80%" title="信息部">
+            <br><br>
+        </div>
+        <div class="paddingText">
+            <h2 class="whiteText">
+                信息部专管学生档案
+            </h2>
+        </div>
+        <br><br>
+        <div class="tittlePicture3" align="center">
+            <h1 class="goldText">
+                校工部
+            </h1>
+        </div>
+        <div align="center">
+            <br><br>
+            <img src="https://hbimg.huaban.com/ce7721e414278a0776e4cbd29a3346d0c01f76347493d-1V2s0z" width="80%" title="校工部">
+            <br><br>
+        </div>
+        <div class="paddingText">
+            <h2 class="whiteText">
+                校工部的人均为前海豹突击队队员和混血种，但普遍血统纯度不高
+            </h2>
+        </div>
+        <br><br>
+        <div class="tittlePicture3" align="center">
+            <h1 class="goldText">
+                心理部
+            </h1>
+        </div>
+        <div align="center">
+            <br><br>
+            <img src="https://seopic.699pic.com/photo/50036/9999.jpg_wh1200.jpg" class="picture" width="80%" title="心理部">
+            <br><br>
+        </div>
+        <div class="paddingText">
+            <h2 class="whiteText">
+                学院的心理部
+            </h2>
+        </div>
+        <br><br>
+        <div class="tittlePicture3" align="center">
+            <h1 class="goldText">
+                风纪委员会
+            </h1>
+        </div>
+        <div align="center">
+            <br><br>
+            <img src="https://hbimg.huaban.com/236ba53bc074ea07f0573f7cd5ddec29bee0478b7baf-9fUGNV" width="80%" title="风纪委员会">
+            <br><br>
+        </div>
+        <div class="paddingText">
+            <h2 class="whiteText">
+                管理学院风纪和财务
+            </h2>
+        </div>
+        <br><br>
+        <div class="tittlePicture2" align="center">
+            <h1 class="goldText">
+                建筑结构
+            </h1>
+        </div>
+        <br><br>
+        <div class="tittlePicture3" align="center">
+            <h1 class="goldText">
+                英灵殿
+            </h1>
+        </div>
+        <div align="center">
+            <br><br>
+            <img src="https://gd-hbimg.huaban.com/015489d427350ea08a495ed092f77db0b1a394e12d85e4-F2mY1m" width="80%" title="英灵殿">
+            <br><br>
+        </div>
+        <div class="paddingText">
+            <h2 class="whiteText">
+                英灵殿是一座拜占庭风格的古老建筑，坐落在奥丁广场的中央，外面装饰着布满暗红色花纹的花岗岩，完整的世界树图案被雕刻在整个外壁上，顶部矗立着一只雄鸡，底层则镇压着一切龙族的祖先，黑龙尼德霍格。两侧墙壁上挂满了历代屠龙战争中为人类建立功勋的英雄头像
+            </h2>
+        </div>
+        <br><br>
+        <div class="tittlePicture3" align="center">
+            <h1 class="goldText">
+                冰窖
+            </h1>
+        </div>
+        <div align="center">
+            <br><br>
+            <img src="https://img.zcool.cn/community/01687f5ecd7d26a8012066214b14ba.jpg@3000w_1l_0o_100sh.jpg" class="picture" width="80%" title="冰窖">
+            <br><br>
+        </div>
+        <div class="paddingText">
+            <h2 class="whiteText">
+                卡塞尔学院的仓库，因始终保持低温而得名。只有失控的危险物品才有资格在冰窖占据一席之地，比如龙鳞、录有“皇帝”言灵的八音盒、炼金设备、龙骨十字等，越往下层藏品级别越高
+            </h2>
+        </div>
+        <br><br>
+        <div class="tittlePicture3" align="center">
+            <h1 class="goldText">
+                湮没之井
+            </h1>
+        </div>
+        <div align="center">
+            <br><br>
+            <img src="https://cdn-prd.ggac.com/ggac/work/image/2023/11/24/a30fa583-647b-4bcc-8b74-ebfe8e32f3e6-2048x.jpg" class="picture" width="80%" title="湮没之井">
+            <br><br>
+        </div>
+        <div class="paddingText">
+            <h2 class="whiteText">
+                卡塞尔学院仓库“冰窖”的最底层，是一个被几千万年的流水侵蚀出来的地下岩洞，也是湮没一切的地方。这里保存着最顶级的藏品，也是最容易失控的危险物品，比如龙骨十字。强大至极的炼金领域填充着这个空间，“领域”由炼金矩阵产生，释放出类似“言灵·戒律”般的效果，强行镇压着藏品们
+            </h2>
+        </div>
+        <br><br>
+        <div class="tittlePicture3" align="center">
+            <h1 class="goldText">
+                教堂
+            </h1>
+        </div>
+        <div align="center">
+            <br><br>
+            <img src="https://hbimg.huaban.com/6a65e9e9b084f7014879e752f4bf2e8eec25f9825ecc3d-DvtBYH" width="80%" title="教堂">
+            <br><br>
+        </div>
+        <div class="paddingText">
+            <h2 class="whiteText">
+                教堂是通往三女神层和守夜人所在的钟楼的核心枢纽
+            </h2>
+        </div>
+        <br><br>
+        <div class="tittlePicture3" align="center">
+            <h1 class="goldText">
+                诺顿馆
+            </h1>
+        </div>
+        <div align="center">
+            <br><br>
+            <img src="https://hbimg.huaban.com/9304f084d6a9ebcf487a06a84ef235fd9122248910d3bb-zxTYKN" width="80%" title="诺顿馆">
+            <br><br>
+        </div>
+        <div class="paddingText">
+            <h2 class="whiteText">
+                诺顿馆是一处免费的场地，赢得“自由一日”的社团可以在其中驻扎一年的时间
+            </h2>
+        </div>
+        <br><br>
+        <div class="tittlePicture3" align="center">
+            <h1 class="goldText">
+                安珀馆
+            </h1>
+        </div>
+        <div align="center">
+            <br><br>
+            <img src="https://hbimg.huaban.com/d1ae9c6aefb3ea1f5f12c5133e48d92d8d6d821d1bd4a9-AmteJH" width="80%" title="安珀馆">
+            <br><br>
+        </div>
+        <div class="paddingText">
+            <h2 class="whiteText">
+                安珀馆是一座有着哥特式尖顶的别墅建筑，是一处付费的场地，可以为社团提供活动场所
+            </h2>
+        </div>
+        <br><br>
+        <div class="tittlePicture3" align="center">
+            <h1 class="goldText">
+                图书馆
+            </h1>
+        </div>
+        <div align="center">
+            <br><br>
+            <img src="https://bkimg.cdn.bcebos.com/pic/2fdda3cc7cd98d1001e93bab7e68af0e7bec55e73aa8?x-bce-process=image/format,f_auto" class="picture" width="80%" title="图书馆">
+            <br><br>
+        </div>
+        <div class="paddingText">
+            <h2 class="whiteText">
+                卡塞尔学院的图书馆是一栋庄重的仿古建筑，大理石立柱支撑着优雅的拱券，顶部是可以看见星空的拼花玻璃窗，厚重的书架把巨大的空间分隔开。图书馆的地下室安置着体积巨大的中央主机，从地下一层直到地下六层
+            </h2>
+        </div>
+        <br><br>
+        <div class="tittlePicture3" align="center">
+            <h1 class="goldText">
+                体育馆
+            </h1>
+        </div>
+        <div align="center">
+            <br><br>
+            <img src="https://img.zcool.cn/community/0128a35b691f63a801215c8f0b7c9a.jpg?x-oss-process=image/auto-orient,1/resize,m_lfit,w_1280,limit_1/sharpen,100/quality,q_100/format,webp" class="picture" width="80%" title="卡塞尔学院">
+            <br><br>
+        </div>
+        <div class="paddingText">
+            <h2 class="whiteText">
+                内有游泳池等设施
+            </h2>
+        </div>
+        <br><br>
+        <div class="tittlePicture3" align="center">
+            <h1 class="goldText">
+                校长办公室
+            </h1>
+        </div>
+        <div align="center">
+            <br><br>
+            <img src="https://c-ssl.duitang.com/uploads/blog/202204/21/20220421084911_49ec8.jpg" class="picture" width="80%" title="校长办公室">
+            <br><br>
+        </div>
+        <div class="paddingText">
+            <h2 class="whiteText">
+                一栋别致的建筑物，整个就是个书架，共有两层，屋顶中央有一扇巨大的天窗，四壁都是书架
+            </h2>
+        </div>
+        <br><br>
+        <div class="tittlePicture3" align="center">
+            <h1 class="goldText">
+                地下层建筑
+            </h1>
+        </div>
+        <div align="center">
+            <br><br>
+            <img src="https://img.zcool.cn/community/01991d5cd81056a801214168a1aabc.jpg@3000w_1l_2o_100sh.jpg" class="picture" width="80%" title="地下层建筑">
+            <br><br>
+        </div>
+        <div class="paddingText">
+            <h2 class="whiteText">
+                卡塞尔学院地下层建筑由三大区域构成，名字分别是兀尔德、贝露丹迪和诗蔻迪，分别对应着地面上的核心区域：金宫、英灵殿和梵格尔夫楼
+            </h2>
+        </div>
+        <br><br>
+        <div class="tittlePicture2" align="center">
+            <h1 class="goldText">
+                学院成员
+            </h1>
+        </div>
+        <br><br>
+        <div class="tittlePicture3" align="center">
+            <h1 class="goldText">
+                校长 希尔伯特·让·昂热
+            </h1>
+        </div>
+        <div align="center">
+            <br><br>
+            <img src="https://img2.baidu.com/it/u=712201371,2016719753&fm=253&fmt=auto&app=120&f=JPEG?w=800&h=500" class="picture" width="80%" title="希尔伯特·让·昂热">
+            <br><br>
+        </div>
+        <div class="paddingText">
+            <h2 class="whiteText">
+                初代狮心会成员，以自身血统和能力当上了校长。负责管理学院、组织屠龙。有权分配龙骨
+            </h2>
+        </div>
+        <br><br>
+        <div class="tittlePicture3" align="center">
+            <h1 class="goldText">
+                副校长 尼古拉斯·弗拉梅尔
+            </h1>
+        </div>
+        <div align="center">
+            <br><br>
+            <img src="https://img0.baidu.com/it/u=482679420,3794611807&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=281" class="picture" width="80%" title="尼古拉斯·弗拉梅尔">
+            <br><br>
+        </div>
+        <div class="paddingText">
+            <h2 class="whiteText">
+                守夜人，辅助昂热执掌卡塞尔学院的老人，在学院内开启了言灵戒律，只有特殊情况才会暂时解除
+            </h2>
+        </div>
+        <br><br>
+        <div class="tittlePicture3" align="center">
+            <h1 class="goldText">
+                学院主机 诺玛·劳恩斯/Eva
+            </h1>
+        </div>
+        <div align="center">
+            <br><br>
+            <img src="picture/REHOBOAM白透.png" width="80%" title="诺玛·劳恩斯 REHOBOAM">
+            <br><br>
+        </div>
+        <div class="paddingText">
+            <h2 class="whiteText">
+                卡塞尔学院中的超强电脑系统，是一台具有“人格”的超级计算机。负责在学院侦查，如有情况会开启警报。EVA和诺玛都是同一智能中枢的性格变体，神经元组合方式不同，但其记忆库和信息库相同
+            </h2>
+        </div>
+        <br><br>
+        <div class="tittlePicture3" align="center">
+            <h1 class="goldText">
+                教授 冯·施耐德
+            </h1>
+        </div>
+        <div align="center">
+            <br><br>
+            <img src="https://img2.baidu.com/it/u=196728011,1678203046&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=500" class="picture" width="80%" title="冯·施耐德">
+            <br><br>
+        </div>
+        <div class="paddingText">
+            <h2 class="whiteText">
+                执行部部长，负责派遣和组织专员执行任务
+            </h2>
+        </div>
+        <br><br>
+        <div class="tittlePicture3" align="center">
+            <h1 class="goldText">
+                教授 格尔德·鲁道夫·曼施坦因
+            </h1>
+        </div>
+        <br><br>
+        <div class="paddingText">
+            <h2 class="whiteText">
+                主管学院风纪和财务
+            </h2>
+        </div>
+        <br><br>
+        <div class="tittlePicture3" align="center">
+            <h1 class="goldText">
+                教授 古德里安
+            </h1>
+        </div>
+        <br><br>
+        <div class="paddingText">
+            <h2 class="whiteText">
+                龙族谱系学相关教授，教学委员会主席，负责教授龙类历史
+            </h2>
+        </div>
+        <br><br>
+        <div class="tittlePicture3" align="center">
+            <h1 class="goldText">
+                教授 曼斯·龙德施泰特
+            </h1>
+        </div>
+        <br><br>
+        <div class="paddingText">
+            <h2 class="whiteText">
+                负责教授魔动机械设计学
+            </h2>
+        </div>
+        <br><br>
+        <div class="tittlePicture3" align="center">
+            <h1 class="goldText">
+                教授 富山雅史
+            </h1>
+        </div>
+        <br><br>
+        <div class="paddingText">
+            <h2 class="whiteText">
+                卡塞尔学院心理部教员
+            </h2>
+        </div>
+        <br><br>
+        <div class="tittlePicture3" align="center">
+            <h1 class="goldText">
+                院系主任 道格·琼斯
+            </h1>
+        </div>
+        <br><br>
+        <div class="paddingText">
+            <h2 class="whiteText">
+                物理系主任，终身教授
+            </h2>
+        </div>
+        <br><br>
+        <div class="tittlePicture3" align="center">
+            <h1 class="goldText">
+                院系主任 让·格鲁斯
+            </h1>
+        </div>
+        <br><br>
+        <div class="paddingText">
+            <h2 class="whiteText">
+                精密机械系主任，终身教授
+            </h2>
+        </div>
+        <br><br>
+        <div class="tittlePicture3" align="center">
+            <h1 class="goldText">
+                院系主任 布莱尔·比特纳
+            </h1>
+        </div>
+        <br><br>
+        <div class="paddingText">
+            <h2 class="whiteText">
+                数学系主任，终身教授，号称“数学界所罗门王”
+            </h2>
+        </div>
+        <br><br>
+        <div class="tittlePicture3" align="center">
+            <h1 class="goldText">
+                优秀学生 路明非
+            </h1>
+        </div>
+        <div align="center">
+            <br><br>
+            <img src="https://bkimg.cdn.bcebos.com/pic/f636afc379310a55b319a751220a54a98226cffcba4d?x-bce-process=image/format,f_auto" class="picture" width="80%" title="路明非">
+            <br><br>
+        </div>
+        <div class="paddingText">
+            <h2 class="whiteText">
+                路明非有着不折不扣的“废柴”个性，爱吐槽，时不时会蹦出一句烂话，平时做事衰到极点，因龙血产生的“血之哀”无法融入群体，在生活中常常感到敏感、孤独、不自信。十八岁前是一名再平凡不过的少年，寄宿在叔叔婶婶家里，经常被忽视。最擅长的是打游戏，理想小到只是看报摊。在十八岁时，却因血统被评定为“S”级而收到卡塞尔学院的邀请，从此来到了龙的国度，开启了新世界的大门
+            </h2>
+        </div>
+        <br><br>
+        <div class="tittlePicture3" align="center">
+            <h1 class="goldText">
+                优秀学生 楚子航
+            </h1>
+        </div>
+        <div align="center">
+            <br><br>
+            <img src="https://bkimg.cdn.bcebos.com/pic/b151f8198618367adab41571bb3c9cd4b31c87014f45?x-bce-process=image/format,f_auto" class="picture" width="80%" title="楚子航">
+            <br><br>
+        </div>
+        <div class="paddingText">
+            <h2 class="whiteText">
+                学习成绩优异。实力与学生会前任主席恺撒·加图索实力不分高下。拥有着高危言灵·君焰，血统在习得禁术“爆血”后得到提升到超A级，却也因副作用而离死不远，在经过耶梦加得的龙血洗礼后稳定了血统
+            </h2>
+        </div>
+        <br><br>
+        <div class="tittlePicture3" align="center">
+            <h1 class="goldText">
+                优秀学生 恺撒·加图索
+            </h1>
+        </div>
+        <div align="center">
+            <br><br>
+            <img src="https://bkimg.cdn.bcebos.com/pic/18d8bc3eb13533fa828b240bbc8bea1f4134970aedc4?x-bce-process=image/format,f_auto" class="picture" width="80%" title="恺撒·加图索">
+            <br><br>
+        </div>
+        <div class="paddingText">
+            <h2 class="whiteText">
+                恺撒·加图索性格狂傲不羁，难以管束，视楚子航为其唯一的对手。是陈墨瞳的未婚夫，路明非的前任老大，高天原牛郎三人组成员之一
+            </h2>
+        </div>
+        <br><br>
+        <div class="tittlePicture3" align="center">
+            <h1 class="goldText">
+                优秀学生 芬格尔·冯·弗林斯
+            </h1>
+        </div>
+        <div align="center">
+            <br><br>
+            <img src="https://bkimg.cdn.bcebos.com/pic/c8177f3e6709c93d70cf06d2f765efdcd100baa1fec4?x-bce-process=image/format,f_auto" class="picture" width="80%" title="芬格尔·冯·弗林斯">
+            <br><br>
+        </div>
+        <div class="paddingText">
+            <h2 class="whiteText">
+                芬格尔·冯·弗林斯，初入卡塞尔学院时血统被评级为A级，但因某些原因使他留级多年，血统评级也降至F，后降至G，被视作为卡塞尔学院的第一废柴，血统本身是很优秀的，只是不太争气。数学上很有天赋，是计算机超级天才，但学问完全没有用在正道上，是学院内部排前几名的黑客
+            </h2>
+        </div>
+        <br><br>
+        <div class="tittlePicture" align="center">
+            <h1 class="goldText">
+                学院文化
+            </h1>
+        </div>
+        <br><br>
+        <div class="tittlePicture2" align="center">
+            <h1 class="goldText">
+                学院徽章
+            </h1>
+        </div>
+        <div align="center">
+            <br><br>
+            <img src="picture/cassellSign.png" width="30%" title="卡塞尔学院">
+            <br><br>
+        </div>
+        <div class="paddingText">
+            <h2 class="whiteText">
+                卡塞尔学院的校徽“半朽的世界树”，是一株半枯半荣的巨树，一半极其繁茂，一半彻底枯萎，象征着毁灭与新生
+            </h2>
+        </div>
+        <br><br>
+        <div class="tittlePicture2" align="center">
+            <h1 class="goldText">
+                学院规则
+            </h1>
+        </div>
+        <br><br>
+        <div class="tittlePicture3" align="center">
+            <h1 class="goldText">
+                “3E”考试
+            </h1>
+        </div>
+        <br><br>
+        <div class="paddingText">
+            <h2 class="whiteText">
+                英文全称“Extraction Evaluation Exam”，是卡塞尔学院的龙族血统评定考试，如果通不过考试就不能被录取。通常都在新生入学后的一周内进行考核
+            </h2>
+        </div>
+        <br><br>
+        <div class="tittlePicture3" align="center">
+            <h1 class="goldText">
+                自由一日
+            </h1>
+        </div>
+        <div align="center">
+            <br><br>
+            <img src="https://bkimg.cdn.bcebos.com/pic/3801213fb80e7bec54e7317b7079ae389b504ec23da8?x-bce-process=image/format,f_auto" class="picture" width="80%" title="自由一日">
+            <br><br>
+        </div>
+        <div class="paddingText">
+            <h2 class="whiteText">
+                “自由一日”是一年一度学生们狂欢的节日，时间大约在新学年的开始。在这一天，大多数的学生纪律都可以不被遵守，学生们可以自由自在的做想做的事情。自由一日中最大的活动便是狮心会与学生会的战争，战争双方动用除了实弹外的一切武器（包括小型战术核弹），只为最后分出胜负，最后的胜出者将会获得学院内高级会馆诺顿馆一年的使用权、年度“学院之星”决赛权、以及在学院内追求的第一个女生不得拒绝并至少维持三个月关系的权利
+            </h2>
+        </div>
+        <br><br>
+        <div class="tittlePicture3" align="center">
+            <h1 class="goldText">
+                契约
+            </h1>
+        </div>
+        <div align="center">
+            <br><br>
+            <img src="https://hbimg.huaban.com/1bf64784a5dcba1d1d1232068d0aeb527aeedae07b99-Tp0i5A" width="80%" title="契约">
+            <br><br>
+        </div>
+        <div class="paddingText">
+            <h2 class="whiteText">
+                学生入学前需要签订秘党核心契约——炼金古卷《亚伯拉罕血统契》（Abraham Indenture，缩写为AI），入学即意味着加入秘党，毕业后驻扎世界各地的学院执行部分部。如果中途选择退学，就会先被洗脑，而后送回国
+            </h2>
+        </div>
+        <br><br>
+        <div class="tittlePicture3" align="center">
+            <h1 class="goldText">
+                任务
+            </h1>
+        </div>
+        <br><br>
+        <div class="paddingText">
+            <h2 class="whiteText">
+                卡塞尔学院的任务，和血统一样分不同等级。优先级从高到低，分别是ABCDEF级，而超越等级之上的特殊任务则定为“S”级。“S”级任务很少出现，例如在三峡水库对龙王诺顿的作战“青铜计划”就是“S”级。而“SS”级别则是例外中的例外，未必比“S”级任务更加重要，但是会极其特殊，此类任务由校董会直接下达，不通过校长昂热
+            </h2>
+        </div>
+        <br><br>
+        <div class="tittlePicture3" align="center">
+            <h1 class="goldText">
+                通缉令
+            </h1>
+        </div>
+        <br><br>
+        <div class="paddingText">
+            <h2 class="whiteText">
+                卡塞尔学院的通缉令分S、A、B三个级别，级别越高，投入的算力就越高。高级通缉令通常适用于高危目标，也会授权追捕者使用相应的暴力。如果通缉令外泄，还会引起赏金猎人的参与，即便他们不能拿着他的人头来学院领取奖金，也会觊觎他的骨头
+            </h2>
+        </div>
+        <br><br>
+        <div class="tittlePicture3" align="center">
+            <h1 class="goldText">
+                日常
+            </h1>
+        </div>
+        <br><br>
+        <div class="paddingText">
+            <h2 class="whiteText">
+                “日常”是卡塞尔学院的校规。寒暑假期间，学生每天都要在线报告。教授们会给日常打分，好的报告会提升绩点，谎报则等于考试作弊
+            </h2>
+        </div>
+        <br><br>
+        <div class="tittlePicture2" align="center">
+            <h1 class="goldText">
+                学院配置
+            </h1>
+        </div>
+        <br><br>
+        <div class="tittlePicture3" align="center">
+            <h1 class="goldText">
+                课程
+            </h1>
+        </div>
+        <div align="center">
+            <br><br>
+            <img src="picture/cassell课.jpg" class="picture" width="80%" title="卡塞尔学院课程">
+            <br><br>
+        </div>
+        <div align="center">
+            <br><br>
+            <img src="https://bkimg.cdn.bcebos.com/pic/1c950a7b02087bf40ad1560d2485402c11dfa8ec6182?x-bce-process=image/format,f_auto" class="picture" width="80%" title="爬行动物学">
+            <br><br>
+        </div>
+        <div align="center">
+            <br><br>
+            <img src="https://bkimg.cdn.bcebos.com/pic/7af40ad162d9f2d3572c260b7fba9d13632763d06682?x-bce-process=image/format,f_auto" class="picture" width="80%" title="龙族谱系学">
+            <br><br>
+        </div>
+        <div class="paddingText">
+            <h2 class="whiteText">
+                学院课程主要包括《魔动机械设计学》《炼金化学》《言灵学》《太极》《实习课》《古诺尔斯语》《龙族谱系学》《爬行动物学》等，主要院系有航空航天工程学部、炼金系、机械系、格斗系、龙族历史系、新闻系、信息系、数学系、物理系等。而所有课程设立的最终目的都是为了屠龙
+            </h2>
+        </div>
+        <br><br>
+        <div class="tittlePicture3" align="center">
+            <h1 class="goldText">
+                校服
+            </h1>
+        </div>
+        <div align="center">
+            <br><br>
+            <img src="https://img0.baidu.com/it/u=2345533466,2230170111&fm=253&fmt=auto&app=120&f=JPEG?w=889&h=500" class="picture" width="80%" title="校服">
+            <br><br>
+        </div>
+        <div class="paddingText">
+            <h2 class="whiteText">
+                卡塞尔学院的校服，包括一件白色的衬衣、滚着银色细边的墨绿色校服和一个深玫瑰红色的领结。校服胸口处的口袋上绣着卡塞尔学院的校徽
+            </h2>
+        </div>
+        <br>
+        <div class="tittlePicture3" align="center">
+            <h1 class="goldText">
+                守夜人讨论区
+            </h1>
+        </div>
+        <br><br>
+        <div class="paddingText">
+            <h2 class="whiteText">
+                守夜人讨论区是卡塞尔学院的网上社区，大多数学生和教师都会关注这个讨论区，学生们可以在讨论区里讨论时事，也可以发布消息和悬赏，甚至可以发起博彩。芬格尔是讨论区的管理员，而正如讨论区的名字，副校长守夜人是讨论区的吧主
+            </h2>
+        </div>
+        <br><br>
+        <div class="tittlePicture3" align="center">
+            <h1 class="goldText">
+                特别快车
+            </h1>
+        </div>
+        <div align="center">
+            <br><br>
+            <img src="https://bkimg.cdn.bcebos.com/pic/0b55b319ebc4b74543a92f8ff8ab09178a82b801bfa9?x-bce-process=image/format,f_auto" class="picture" width="80%" title="特别快车">
+            <br><br>
+        </div>
+        <div class="paddingText">
+            <h2 class="whiteText">
+                学生返校时一般在芝加哥火车站乘坐CC1000次地铁专线快车或直接乘坐直升机抵达
+            </h2>
+        </div>
+        <br><br>
+        <div class="tittlePicture" align="center">
+            <h1 class="goldText">
+                学院驻地
+            </h1>
+        </div>
+        <div align="center">
+            <br><br>
+            <img src="https://bkimg.cdn.bcebos.com/pic/0df431adcbef76094b365006718ab4cc7cd98c1030a8?x-bce-process=image/format,f_auto" class="picture" width="80%" title="学院驻地">
+            <br><br>
+        </div>
+        <div class="paddingText">
+            <h2 class="whiteText">
+                卡塞尔学院坐落于美国伊利诺伊州五大湖区，芝加哥远郊的一座半山腰上，依山靠湖，山下是地铁站和山谷校园，靶场和赛艇基地都位于此处
+            </h2>
+        </div>
+        <br><br>
+        <div class="tittlePicture" align="center">
+            <h1 class="goldText">
+                友好关系
+            </h1>
+        </div>
+        <br><br>
+        <div class="tittlePicture2" align="center">
+            <h1 class="goldText">
+                芝加哥大学
+            </h1>
+        </div>
+        <div align="center">
+            <br><br>
+            <img src="https://img2.baidu.com/it/u=2286046196,2321438681&fm=253&fmt=auto&app=138&f=JPEG?w=667&h=500" class="picture" width="80%" title="芝加哥大学">
+            <br><br>
+        </div>
+        <div class="paddingText">
+            <h2 class="whiteText">
+                卡塞尔学院和芝加哥大学是联谊学校，常联合举办一些比赛活动
+            </h2>
+        </div>
+        <br><br>
+        <div class="tittlePicture2" align="center">
+            <h1 class="goldText">
+                蛇岐八家
+            </h1>
+        </div>
+        <div align="center">
+            <br><br>
+            <img src="https://img1.baidu.com/it/u=1163065852,4011577130&fm=253&fmt=auto&app=138&f=JPEG?w=300&h=240" class="picture" width="80%" title="蛇岐八家">
+            <br><br>
+        </div>
+        <div class="paddingText">
+            <h2 class="whiteText">
+                二战结束后，希尔伯特·让·昂热前往东京和蛇岐八家会晤，在盟约的基础上补签了教育协议，实则正式合作的约定书。根据教育协议，蛇岐八家会选送优秀的后裔来美国进修，这些日裔学员回国后组成卡塞尔学院日本分部。教育协议的签署意味着蛇岐八家正式从属于秘党，但拥有很大的自治权。赫尔佐格事件结束之后，蛇岐八家和卡塞尔学院达成了新的联盟，最高决策权回到了校长昂热的手中，但是蛇岐八家依然享有非常大的自主权，在秘党的体系里，日本算是自治的区域
+            </h2>
+        </div>
+        <script type="text/javascript">
+            document.addEventListener("keydown", function(F12)
+                {
+                    if(F12.key == 'F12')
+                    {
+                        F12.preventDefault()
+                    }
+                }
+            )
+            let url = window.location.href
+            function setCookie(name, value, days)
+            {
+                var expires = "";
+                if (days) {
+                    var date = new Date();
+                    date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+                    expires = "; expires=" + date.toUTCString();
+                }
+                document.cookie = name + "=" + value + expires + "; path=/";
+            }
+            function getCookie(name)
+            {
+                var nameEQ = name + "=";
+                var cookies = document.cookie.split(';');
+                for (var i = 0; i < cookies.length; i++)
+                {
+                    var cookie = cookies[i];
+                    while (cookie.charAt(0) === ' ')
+                    {
+                        cookie = cookie.substring(1, cookie.length);
+                    }
+                    if (cookie.indexOf(nameEQ) === 0)
+                    {
+                        return cookie.substring(nameEQ.length, cookie.length);
+                    }
+                }
+                return null;
+            }
+            function checkCookie(name)
+            {
+                var cookies = document.cookie.split(';');
+                for (var i = 0; i < cookies.length; i++)
+                {
+                    var cookie = cookies[i];
+                    while (cookie.charAt(0) === ' ')
+                    {
+                        cookie = cookie.substring(1, cookie.length);
+                    }
+                    if (cookie.indexOf(name + "=") === 0)
+                    {
+                        return true;
+                    }
+                }
+                return false;
+            }
+            function hasQuestionMark(str)
+            {
+                return str.indexOf('?') !== -1;
+            }
+            if(hasQuestionMark(url))
+            {
+                let obj = {}
+                let str = url.split("?")[1].split("&")
+                for (let i = 0; i < str.length; i++)
+                {
+                    let a = str[i].split('=')
+                    obj[a[0]] = a[1]
+                }
+                let userNameCookie = obj.userName
+                let userPasswordCookie = obj.userPassword
+                setCookie("userName",userNameCookie,10000)
+                setCookie("isLog","",10000)
+                alert("欢迎" + userNameCookie + "登录卡塞尔学院")
+            }
+            else
+            {
+                if(checkCookie("isLog"))
+                {
+                    let userNameText = getCookie("userName")
+                    alert("欢迎" + userNameText + "登录卡塞尔学院")
+                }
+                else
+                {
+                    alert("请先登录卡塞尔学院")
+                }
+            }
+            function ClickInformation()
+            {
+                window.open("cassellA.html",'_self')
+            }
+            function ClickClass()
+            {
+                window.open("html/cassellClassA.html",'_self')
+            }
+            function ClickOrg()
+            {
+                window.open("html/cassellOrgA.html",'_self')
+            }
+            function ClickChat()
+            {
+                window.open("html/cassellChatA.html",'_self')
+            }
+            function ClickSubmit()
+            {
+                window.open("html/cassellLogA.html",'_self')
+            }
+            function ClickAndr()
+            {
+                window.open("cassell.html",'_self')
+            }
+        </script>
+    </body>
+    <br>
+    <hr color="#1D3E31">
+    <footer align="center">
+        <font color="#E1CD92">
+                Creator &COPY; \W/ - REHOBOAM - ZIMA PULSE - Cassell College
+        </font>
+    </footer>
+</html>

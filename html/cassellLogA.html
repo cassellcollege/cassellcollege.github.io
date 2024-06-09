@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="description" content="卡塞尔学院官网，卡塞尔学院(CASSELL)是一所位于美国伊利诺伊州芝加哥远郊的私立大学，和芝加哥大学是联谊学校，每年都在密歇根湖联合举办马术、赛艇、热气球、游泳等校际比赛活动，此外还有更加广泛的学术交流，主要研究方向是古代爬行类动物，前身是秘党，在引入现代化教育机制成立为学院后以德国著名屠龙世家“卡塞尔”的姓氏命名，主要功能是培养优秀的混血种人才、收集研究关于龙族的一切信息、研制新型的杀伤性武器，以及尽一切力量屠龙"/>
+        <meta name="keywords" content="龙族,密党,卡塞尔,casell"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="referrer" content="no-referrer">
+        <title>卡塞尔学院 参加组织</title>
+        <link rel="icon" href="../picture/cassellSign.png" type="image/png">
+        <style type="text/css">
+            @font-face 
+            {
+                font-family: '华宋';
+                src: url("../A/STSONG.TTF");
+            }
+            .nav 
+            {
+                position: fixed;
+                top: 10px;
+                float: left;
+                width: 99%;
+                height: 60px;
+                margin-left: 10px;
+            }
+            .whiteText 
+            {
+                font-family: '华宋',宋体,楷体;
+                font-size: medium;
+                color: white;
+                margin: 0 auto;
+                font-weight: bolder;
+            }
+            .navText 
+            {
+                font-size: medium;
+                font-family: '华宋',宋体,楷体;
+                color: white;
+                margin-left: 15px;
+                margin-right: 15px;
+            }
+            .navButton 
+            {
+                height: 30px;
+                width: 100px;
+                border: #E1CD92;
+                background-color: #1D3E31;
+                font-family: '华宋',宋体,楷体;
+                color: white;
+                font-size: medium;
+                margin-left: 20px;
+                border-radius: 30px;
+                font-weight: bolder;
+                box-shadow: 0px 2px 6px #CABC87;
+            }
+            .buttonClass
+            {
+                border-radius: 30px;
+                font-weight: bolder;
+                box-shadow: 0px 2px 6px #CABC87;
+                border: #E1CD92;
+                background-color: #1D3E31;
+                font-family: '华宋',宋体,楷体;
+                color: white;
+                font-size: medium;
+                margin-left: 20px;
+                margin-right: 20px;
+                margin-bottom: 20px;
+                margin-top: 20px;
+            }
+            .login-box{
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%,-50%);
+                width: 80%;
+                padding:40px;
+                background: rgba(0,0,0,.8);
+                box-sizing: border-box;
+                box-shadow: 0 15px  25px rgba(0,0,0,.5);
+                border-radius: 10px;
+            }
+            .login-box h2{
+                margin: 0 0 30px;
+                padding: 0;
+                text-align: center;
+                color: #E1CD92;
+                font-family: '华宋',宋体,楷体;
+            }
+            .login-box .login-field{
+                position: relative;
+            }
+            .login-box .login-field  input{
+                width: 100%;
+                padding: 10px 0;
+                font-size: 16px;
+                color: #fff;
+                margin-bottom: 30px;
+                border: none;
+                border-bottom: 1px solid #fff;
+                outline: none;
+                background: transparent;
+            }
+            .login-box .login-field  label{
+                position: absolute;
+                top: 0;
+                left: 0;
+                letter-spacing: 1px;
+                padding: 10px 0;
+                font-size: 16px;
+                color: #E1CD92;
+                pointer-events: none;
+                transition: .5s;
+            }
+            .login-box .login-field input:focus ~ label,
+            .login-box .login-field input:valid ~ label{
+                top: -23px;
+                left: 0;
+                color: #E1CD92;
+                font-size: 12px;
+            }
+            .login-box button{
+                background: transparent;
+                border: none;
+                outline: none;
+                color: #fff;
+                background: #1D3E31;
+                padding: 10px 20px;
+                cursor: pointer;
+                border-radius: 25px;
+                height: 50px;
+            }
+            .Andr
+            {
+                position: fixed;
+                right: 10px;
+                top: 180px;
+            }
+            body
+            {
+                background-image: url(../picture/homeBG.jpg);
+                background-size: 100%;
+                background-attachment: fixed;
+            }
+        </style>
+    </head>
+    <body oncontextmenu = "return false">
+        <div class="nav">
+            <img src="../picture/cassellSign.png" height="40px" title="卡塞尔学院" align="center">
+            <font class="navText">
+                卡塞尔学院 CASSELL
+            </font>
+            <br>
+            <img src="../picture/信息.png" height="40px" title="学院介绍" align="center" onclick="ClickInformation()">
+            <button class="navButton" id="path" onclick="ClickInformation()">
+                学院介绍
+            </button>
+            <font class="navText">
+                |
+            </font>
+            <img src="../picture/覆盖.png" height="40px" title="报名选课" align="center" onclick="ClickClass()">
+            <button class="navButton" onclick="ClickClass()">
+                报名选课
+            </button>
+            <br>
+            <img src="../picture/结构.png" height="40px" title="参加组织" align="center" onclick="ClickOrg()">
+            <button class="navButton" onclick="ClickOrg()">
+                参加组织
+            </button>
+            <font class="navText">
+                |
+            </font>
+            <img src="../picture/论坛.png" height="40px" title="守夜论坛" align="center" onclick="ClickChat()">
+            <button class="navButton" onclick="ClickChat()">
+                守夜论坛
+            </button>
+        </div>
+        <img src="../picture/网络.png" class="Andr" width="40px" title="电脑" onclick="ClickAndr()">
+        <div class="login-box">
+			<h2>登 录 界 面</h2>
+			<form action="../cassellA.html" onsubmit="ClickSubmit()">
+				<div class="login-field">
+					<input type="text" name="userName" required="" id="userNameID" autocomplete="off"/>
+					<label for="userNameID">用户名</label>
+				</div>
+				<div class="login-field">
+					<input type="password" name="userPassword" required="" id="passwordID" autocomplete="off"/>
+					<label for="passwordID">密码</label>
+				</div>
+				<div align="center">
+                    <button class="whiteText " type="submit">
+                        提 交
+                    </button>
+                </div>
+			</form>
+		</div>
+        <script type="text/javascript">
+            document.addEventListener("keydown", function(F12)
+                {
+                    if(F12.key == 'F12')
+                    {
+                        F12.preventDefault()
+                    }
+                }
+            )
+            function ClickInformation()
+            {
+                window.open("../cassellA.html",'_self')
+            }
+            function ClickClass()
+            {
+                window.open("cassellClassA.html",'_self')
+            }
+            function ClickOrg()
+            {
+                window.open("cassellOrgA.html",'_self')
+            }
+            function ClickChat()
+            {
+                window.open("cassellChatA.html",'_self')
+            }
+            function ClickAndr()
+            {
+                window.open("cassellLog.html",'_self')
+            }
+        </script>
+    </body>
+</html>

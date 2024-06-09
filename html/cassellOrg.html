@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="description" content="卡塞尔学院官网，卡塞尔学院(CASSELL)是一所位于美国伊利诺伊州芝加哥远郊的私立大学，和芝加哥大学是联谊学校，每年都在密歇根湖联合举办马术、赛艇、热气球、游泳等校际比赛活动，此外还有更加广泛的学术交流，主要研究方向是古代爬行类动物，前身是秘党，在引入现代化教育机制成立为学院后以德国著名屠龙世家“卡塞尔”的姓氏命名，主要功能是培养优秀的混血种人才、收集研究关于龙族的一切信息、研制新型的杀伤性武器，以及尽一切力量屠龙"/>
+        <meta name="keywords" content="龙族,密党,卡塞尔,casell"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="referrer" content="no-referrer">
+        <title>卡塞尔学院 参加组织</title>
+        <link rel="icon" href="../picture/cassellSign.png" type="image/png">
+        <style type="text/css">
+            @font-face 
+            {
+                font-family: '华宋';
+                src: url("../A/STSONG.TTF");
+            }
+            .picture
+            {
+                border-radius: 30px;
+                border: #E1CD92;
+                box-shadow: 0px 2px 6px #CABC87;
+            }
+            .nav 
+            {
+                position: fixed;
+                top: 10px;
+                float: left;
+                width: 99%;
+                height: 60px;
+                margin-left: 10px;
+            }
+            .text 
+            {
+                font-size: x-large;
+                font-family: '华宋',宋体,楷体;
+                color: white;
+            }
+            .goldText 
+            {
+                font-family: '华宋',宋体,楷体;
+                color: #E1CD92;
+                margin: 0 auto;
+            }
+            .greenText 
+            {
+                font-family: '华宋',宋体,楷体;
+                color: #1D3E31;
+                margin: 0 auto;
+            }
+            .whiteText 
+            {
+                font-family: '华宋',宋体,楷体;
+                color: white;
+                margin: 0 auto;
+            }
+            .navText 
+            {
+                font-size: x-large;
+                font-family: '华宋',宋体,楷体;
+                color: white;
+                margin-left: 15px;
+                margin-right: 15px;
+            }
+            .navButton 
+            {
+                height: 40px;
+                width: 120px;
+                border: #E1CD92;
+                background-color: #1D3E31;
+                font-family: '华宋',宋体,楷体;
+                color: white;
+                font-size: x-large;
+                margin-left: 20px;
+                border-radius: 30px;
+                font-weight: bolder;
+                box-shadow: 0px 2px 6px #CABC87;
+            }
+            .tittlePicture
+            {
+                background-color: #1D3E31;
+                width: 90%;
+                border-radius: 30px;
+                box-shadow: 0px 2px 6px #CABC87;
+                margin: 0 auto;
+            }
+            .tittlePicture2
+            {
+                background-color: #1D3E31;
+                width: 70%;
+                border-radius: 30px;
+                box-shadow: 0px 2px 6px #CABC87;
+                margin: 0 auto;
+            }
+            .paddingText 
+            {  
+                padding: 5px;
+                border-style: solid;
+                border-width: 2px;
+                border-color: #1D3E31;
+                border-style: double;
+                width: 50%;
+                margin: 0 auto;
+            }
+            .buttonClass
+            {
+                border-radius: 30px;
+                font-weight: bolder;
+                box-shadow: 0px 2px 6px #CABC87;
+                border: #E1CD92;
+                background-color: #1D3E31;
+                font-family: '华宋',宋体,楷体;
+                color: white;
+                font-size: x-large;
+                margin-left: 20px;
+                margin-right: 20px;
+                margin-bottom: 20px;
+                margin-top: 20px;
+            }
+            .Submit
+            {
+                position: fixed;
+                right: 20px;
+                top: 70px;
+            }
+            .Andr
+            {
+                position: fixed;
+                right: 20px;
+                top: 130px;
+            }
+        </style>
+    </head>
+    <body style="background-image: url(../picture/homeBG.jpg);
+    background-size: 100%;
+    background-attachment: fixed;" oncontextmenu="return false">
+        <div class="nav">
+            <img src="../picture/cassellSign.png" height="40px" title="卡塞尔学院" align="center">
+            <font class="navText">
+                卡塞尔学院 CASSELL
+            </font> 
+            <font class="navText">
+                |
+            </font>
+            <img src="../picture/信息.png" height="40px" title="学院介绍" align="center" onclick="ClickInformation()">
+            <button class="navButton" id="path" onclick="ClickInformation()">
+                学院介绍
+            </button>
+            <font class="navText">
+                |
+            </font>
+            <img src="../picture/覆盖.png" height="40px" title="报名选课" align="center" onclick="ClickClass()">
+            <button class="navButton" onclick="ClickClass()">
+                报名选课
+            </button>
+            <font class="navText">
+                |
+            </font>
+            <img src="../picture/结构.png" height="40px" title="参加组织" align="center" onclick="ClickOrg()">
+            <button class="navButton" onclick="ClickOrg()">
+                参加组织
+            </button>
+            <font class="navText">
+                |
+            </font>
+            <img src="../picture/论坛.png" height="40px" title="守夜论坛" align="center" onclick="ClickChat()">
+            <button class="navButton" onclick="ClickChat()">
+                守夜论坛
+            </button>
+        </div>
+        <img src="../picture/注册.png" class="Submit" width="50px" title="登录" onclick="ClickSubmit()">
+        <img src="../picture/网络.png" class="Andr" width="50px" title="手机" onclick="ClickAndr()">
+        <br><br><br>
+        <div align="center">
+            <img src="../picture/cassellSign.png" width="10%" title="卡塞尔学院">
+            <br><br>
+            <h1 class="goldText">
+                卡 塞 尔 学 院
+            </h1>
+            <hr width="40%" color="#1D3E31">
+            <h3 class="goldText">
+                C A S S E L L &nbsp; C O L L E G E
+            </h3>
+            <br>
+            <h1 class="goldText">
+                参 加 组 织
+            </h1>
+        </div>
+        <br>
+        <hr color="#1D3E31">
+        <div align="center">
+            <br><br>
+            <img src="https://pic.rmb.bdstatic.com/973d7e43286e375d8b822c4a667ba1de.jpeg@wm_2,t_55m+5a625Y+3L+iJuuacr+aYrw==,fc_ffffff,ff_U2ltSGVp,sz_3" class="picture" width="40%" title="组织">
+            <br><br>
+        </div>
+        <div class="tittlePicture" align="center">
+            <h1 class="goldText">
+                学 院 部 门
+            </h1>
+        </div>
+        <div align="center">
+            <div align="center">
+                <br><br>
+                <img src="https://nimg.ws.126.net/?url=http%3A%2F%2Fdingyue.ws.126.net%2F8SlefkGqY3VB0y77uoWyUBUVytNvlCmRV0omKqGYqHMIw1546572868857.jpeg&thumbnail=660x2147483647&quality=80&type=jpg" class="picture" width="40%" title="蛇岐八家">
+                <br><br>
+            </div>
+            <button class="buttonClass"  onclick="ClickO1()">
+                &nbsp;执行部&nbsp;
+            </button>
+            <button class="buttonClass"  onclick="ClickO1()">
+                &nbsp;炼金原理部&nbsp;
+            </button>
+            <button class="buttonClass"  onclick="ClickO1()">
+                &nbsp;装备部&nbsp;
+            </button>
+            <button class="buttonClass"  onclick="ClickO1()">
+                &nbsp;信息部&nbsp;
+            </button>
+            <button class="buttonClass"  onclick="ClickO1()">
+                &nbsp;校工部&nbsp;
+            </button>
+            <button class="buttonClass"  onclick="ClickO1()">
+                &nbsp;心理部&nbsp;
+            </button>
+        </div>
+        <br><br>
+        <div class="tittlePicture" align="center">
+            <h1 class="goldText">
+                本 部 组 织
+            </h1>
+        </div>
+        <div align="center">
+            <div align="center">
+                <br><br>
+                <img src="https://bkimg.cdn.bcebos.com/pic/94cad1c8a786c9177f3e89a67d6b67cf3bc79e3df9af?x-bce-process=image/format,f_auto" class="picture" width="40%" title="学生会">
+                <br><br>
+            </div>
+            <button class="buttonClass"  onclick="ClickB1()">
+                &nbsp;学生会 龙血团&nbsp;
+            </button>
+            <button class="buttonClass"  onclick="ClickB1()">
+                &nbsp;学生会 新闻部&nbsp;
+            </button>
+            <button class="buttonClass"  onclick="ClickB1()">
+                &nbsp;学生会 舞蹈团&nbsp;
+            </button>
+            <div align="center">
+                <br><br>
+                <img src="https://bkimg.cdn.bcebos.com/pic/43a7d933c895d143ad4bcfa3c7a695025aafa50fa9af?x-bce-process=image/format,f_auto" class="picture" width="40%" title="狮心会">
+                <br><br>
+            </div>
+            <button class="buttonClass"  onclick="ClickB1()">
+                &nbsp;狮心会&nbsp;
+            </button>
+            <button class="buttonClass"  onclick="ClickB1()">
+                &nbsp;新生联谊会&nbsp;
+            </button>
+        </div>
+        <br><br>
+        <div class="tittlePicture" align="center">
+            <h1 class="goldText">
+                分 部 组 织
+            </h1>
+        </div>
+        <div align="center">
+            <div align="center">
+                <br><br>
+                <img src="https://bkimg.cdn.bcebos.com/pic/ca1349540923dd54c473998bd409b3de9d8248d4?x-bce-process=image/format,f_auto" class="picture" width="40%" title="蛇岐八家">
+                <br><br>
+            </div>
+            <button class="buttonClass"  onclick="ClickB1()">
+                &nbsp;蛇岐八家&nbsp;
+            </button>
+            <div align="center">
+                <br><br>
+                <img src="https://pic.gerenjianli.com/mingren_larger/2483/17301003.jpg" class="picture" width="40%" title="猛鬼众">
+                <br><br>
+            </div>
+            <button class="buttonClass"  onclick="ClickB1()">
+                &nbsp;猛鬼众&nbsp;
+            </button>
+            <div align="center">
+                <br><br>
+                <img src="https://nimg.ws.126.net/?url=http%3A%2F%2Fdingyue.ws.126.net%2FisAY3ZrsYfm9rBBcdb8DEBlaRAzZnXRnqP5nMHtUAvIS11551085753004compressflag.jpg&thumbnail=660x2147483647&quality=80&type=jpg" class="picture" width="40%" title="秘党">
+                <br><br>
+            </div>
+            <button class="buttonClass"  onclick="ClickB1()">
+                &nbsp;秘党&nbsp;
+            </button>
+            <div align="center">
+                <br><br>
+                <img src="https://nimg.ws.126.net/?url=https://dingyue.ws.126.net/2020/1004/94d1c516j00qhogfp001ic000go00bbm.jpg&thumbnail=650x2147483647&quality=80&type=jpg" class="picture" width="40%" title="北美混血种">
+                <br><br>
+            </div>
+            <button class="buttonClass"  onclick="ClickB1()">
+                &nbsp;北美混血种&nbsp;
+            </button>
+        </div>
+        <script type="text/javascript">
+            function ClickInformation()
+            {
+                window.open("../cassell.html",'_self')
+            }
+            function ClickClass()
+            {
+                window.open("cassellClass.html",'_self')
+            }
+            function ClickOrg()
+            {
+                window.open("cassellOrg.html",'_self')
+            }
+            function ClickChat()
+            {
+                window.open("cassellChat.html",'_self')
+            }
+            function ClickSubmit()
+            {
+                window.open("cassellLog.html",'_self')
+            }
+            function ClickAndr()
+            {
+                window.open("cassellOrgA.html",'_self')
+            }
+            document.addEventListener("keydown", function(F12)
+                {
+                    if(F12.key == 'F12')
+                    {
+                        F12.preventDefault()
+                    }
+                }
+            )
+        </script>
+    </body>
+    <br>
+    <hr color="#1D3E31">
+    <footer align="center">
+        <font color="#E1CD92">
+                Creator &COPY; \W/ - REHOBOAM - ZIMA PULSE - Cassell College
+        </font>
+    </footer>
+</html>
