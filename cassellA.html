@@ -4,16 +4,12 @@
         <meta charset="UTF-8"/>
         <meta name="description" content="卡塞尔学院官网，卡塞尔学院(CASSELL)是一所位于美国伊利诺伊州芝加哥远郊的私立大学，和芝加哥大学是联谊学校，每年都在密歇根湖联合举办马术、赛艇、热气球、游泳等校际比赛活动，此外还有更加广泛的学术交流，主要研究方向是古代爬行类动物，前身是秘党，在引入现代化教育机制成立为学院后以德国著名屠龙世家“卡塞尔”的姓氏命名，主要功能是培养优秀的混血种人才、收集研究关于龙族的一切信息、研制新型的杀伤性武器，以及尽一切力量屠龙"/>
         <meta name="keywords" content="龙族,密党,卡塞尔,casell"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="referrer" content="no-referrer">
         <title>卡塞尔学院 学院介绍</title>
-        <link rel="icon" href="picture/cassellSign.png" type="image/png">
+        <link rel="canonical" href="https://www.cassell.fun" />
+        <link rel="shortcut icon" href="picture/cassellSign.ico" />
         <style type="text/css">
-            @font-face 
-            {
-                font-family: '华宋';
-                src: url("A/STSONG.TTF");
-            } 
             .picture
             {
                 border-radius: 30px;
@@ -26,37 +22,37 @@
                 top: 10px;
                 float: left;
                 width: 99%;
-                height: 30px;
+                height: 60px;
                 margin-left: 10px;
             }
             .text 
             {
-                font-size: medium;
-                font-family: '华宋',宋体,楷体;
+                font-size: small;
+                font-family: 宋体,楷体,serif;
                 color: white;
             }
             .goldText 
             {
-                font-family: '华宋',宋体,楷体;
+                font-family: 宋体,楷体,serif;
                 color: #E1CD92;
                 margin: 0 auto;
             }
             .greenText 
             {
-                font-family: '华宋',宋体,楷体;
+                font-family: 宋体,楷体,serif;
                 color: #1D3E31;
                 margin: 0 auto;
             }
             .whiteText 
             {
-                font-family: '华宋',宋体,楷体;
+                font-family: 宋体,楷体,serif;
                 color: white;
                 margin: 0 auto;
             }
             .navText 
             {
-                font-size:medium;
-                font-family: '华宋',宋体,楷体;
+                font-size:small;
+                font-family: 宋体,楷体,serif;
                 color: white;
                 margin-left: 15px;
                 margin-right: 15px;
@@ -64,12 +60,12 @@
             .navButton 
             {
                 height: 30px;
-                width: 100px;
+                width: 80px;
                 border: #E1CD92;
                 background-color: #1D3E31;
-                font-family: '华宋',宋体,楷体;
+                font-family: 宋体,楷体,serif;
                 color: white;
-                font-size: medium;
+                font-size: small;
                 margin-left: 20px;
                 border-radius: 30px;
                 font-weight: bolder;
@@ -94,7 +90,7 @@
             .tittlePicture3
             {
                 background-color: #1D3E31;
-                width: 50%;
+                width: 40%;
                 border-radius: 30px;
                 box-shadow: 0px 2px 6px #CABC87;
                 margin: 0 auto;
@@ -112,55 +108,59 @@
             .Submit
             {
                 position: fixed;
-                right: 10px;
-                top: 140px;
+                right: 20px;
+                top: 150px;
             }            
             .Andr
             {
                 position: fixed;
-                right: 10px;
-                top: 190px;
+                right: 20px;
+                top: 220px;
+            }
+            body
+            {
+                background-image: url(picture/homeBGM.jpg);
+                background-size: 100%;
+                background-attachment: fixed;
             }
         </style>
     </head>
-    <body style="background-image: url(picture/homeBG.jpg);
-    background-size: 100%;
-    background-attachment: fixed;" oncontextmenu="return false">
+    <body oncontextmenu="return false">
         <div class="nav">
-            <img src="picture/cassellSign.png" height="40px" title="卡塞尔学院" align="center">
+            <img src="../picture/cassellSign.png" height="40px" title="卡塞尔学院" align="center" id="index" onclick="ClickIndex()">
             <font class="navText">
                 卡塞尔学院 CASSELL
             </font>
             <br>
-            <img src="picture/信息.png" height="40px" title="学院介绍" align="center" onclick="ClickInformation()">
+            <img src="../picture/信息.png" height="40px" title="学院介绍" align="center" onclick="ClickInformation()">
             <button class="navButton" id="path" onclick="ClickInformation()">
                 学院介绍
             </button>
             <font class="navText">
                 |
             </font>
-            <img src="picture/覆盖.png" height="40px" title="报名选课" align="center" onclick="ClickClass()">
+            <img src="../picture/覆盖.png" height="40px" title="报名选课" align="center" onclick="ClickClass()">
             <button class="navButton" onclick="ClickClass()">
                 报名选课
             </button>
             <br>
-            <img src="picture/结构.png" height="40px" title="参加组织" align="center" onclick="ClickOrg()">
+            <img src="../picture/结构.png" height="40px" title="参加组织" align="center" onclick="ClickOrg()">
             <button class="navButton" onclick="ClickOrg()">
                 参加组织
             </button>
             <font class="navText">
                 |
             </font>
-            <img src="picture/论坛.png" height="40px" title="守夜论坛" align="center" onclick="ClickChat()">
+            <img src="../picture/论坛.png" height="40px" title="守夜论坛" align="center" onclick="ClickChat()">
             <button class="navButton" onclick="ClickChat()">
                 守夜论坛
             </button>
         </div>
-        <img src="picture/注册.png" class="Submit" width="40px" title="登录" onclick="ClickSubmit()">
-        <img src="picture/网络.png" class="Andr" width="40px" title="电脑" onclick="ClickAndr()">
-        <br><br><br><br><br><br>
+        <img src="../picture/注册.png" class="Submit" width="40px" title="登录" onclick="ClickSubmit()">
+        <img src="../picture/网络.png" class="Andr" width="40px" title="手机" onclick="ClickAndr()">
+        <br><br><br><br><br><br><br>
         <div align="center">
-            <img src="picture/cassellSign.png" width="30%" title="卡塞尔学院">
+            <img src="../picture/cassellSign.png" width="30%" title="卡塞尔学院">
             <br><br>
             <h1 class="goldText">
                 卡 塞 尔 学 院
@@ -360,7 +360,7 @@
         </div>
         <div align="center">
             <br><br>
-            <img src="https://hbimg.huaban.com/053709d5f749852c63fdd206441fdf6d7f80900349b7-C5wvuz" width="80%" class="picture" title="秘党元老会">
+            <img src="https://hbimg.huaban.com/053709d5f749852c63fdd206441fdf6d7f80900349b7-C5wvuz" width="50%" class="picture" title="秘党元老会">
             <br><br>
         </div>
         <div class="paddingText">
@@ -622,7 +622,7 @@
         </div>
         <div align="center">
             <br><br>
-            <img src="https://img.zcool.cn/community/0128a35b691f63a801215c8f0b7c9a.jpg?x-oss-process=image/auto-orient,1/resize,m_lfit,w_1280,limit_1/sharpen,100/quality,q_100/format,webp" class="picture" width="80%" title="卡塞尔学院">
+            <img src="https://img.zcool.cn/community/0128a35b691f63a801215c8f0b7c9a.jpg?x-oss-process=image/auto-orient,1/resize,m_lfit,w_1280,limit_1/sharpen,100/quality,q_100/format,webp" class="picture" width="80%" title="体育馆">
             <br><br>
         </div>
         <div class="paddingText">
@@ -894,7 +894,7 @@
         </div>
         <div align="center">
             <br><br>
-            <img src="picture/cassellSign.png" width="30%" title="卡塞尔学院">
+            <img src="picture/cassellSign.png" width="20%" title="卡塞尔学院">
             <br><br>
         </div>
         <div class="paddingText">
@@ -1119,6 +1119,10 @@
             </h2>
         </div>
         <script type="text/javascript">
+            if (window.screen.width > 780)
+            {
+                window.open("cassell.html",'_self')
+            }
             document.addEventListener("keydown", function(F12)
                 {
                     if(F12.key == 'F12')
@@ -1186,10 +1190,10 @@
                     let a = str[i].split('=')
                     obj[a[0]] = a[1]
                 }
-                let userNameCookie = obj.userName
-                let userPasswordCookie = obj.userPassword
-                setCookie("userName",userNameCookie,10000)
-                setCookie("isLog","",10000)
+                let userNameCookie = decodeURIComponent(obj.userName)
+                // let userPasswordCookie = obj.userPassword
+                setCookie("userName",userNameCookie,300)
+                setCookie("isLog","",300)
                 alert("欢迎" + userNameCookie + "登录卡塞尔学院")
             }
             else
@@ -1203,6 +1207,10 @@
                 {
                     alert("请先登录卡塞尔学院")
                 }
+            }
+            function ClickIndex()
+            {
+                window.open("http://cassell.fun",'_self')
             }
             function ClickInformation()
             {
@@ -1226,7 +1234,7 @@
             }
             function ClickAndr()
             {
-                window.open("cassell.html",'_self')
+                window.open("cassellA.html",'_self')
             }
         </script>
     </body>

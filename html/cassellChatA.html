@@ -7,13 +7,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="referrer" content="no-referrer">
         <title>卡塞尔学院 守夜论坛</title>
-        <link rel="icon" href="../picture/cassellSign.png" type="image/png">
+        <link rel="canonical" href="https://www.cassell.fun" />
+        <link rel="shortcut icon" href="picture/cassellSign.ico" />
         <style type="text/css">
-            @font-face 
-            {
-                font-family: '华宋';
-                src: url("../A/STSONG.TTF");
-            }
             .picture
             {
                 border-radius: 30px;
@@ -26,37 +22,37 @@
                 top: 10px;
                 float: left;
                 width: 99%;
-                height: 30px;
+                height: 60px;
                 margin-left: 10px;
             }
             .text 
             {
-                font-size: medium;
-                font-family: '华宋',宋体,楷体;
+                font-size: small;
+                font-family: 宋体,楷体,serif;
                 color: white;
             }
             .goldText 
             {
-                font-family: '华宋',宋体,楷体;
+                font-family: 宋体,楷体,serif;
                 color: #E1CD92;
                 margin: 0 auto;
             }
             .greenText 
             {
-                font-family: '华宋',宋体,楷体;
+                font-family: 宋体,楷体,serif;
                 color: #1D3E31;
                 margin: 0 auto;
             }
             .whiteText 
             {
-                font-family: '华宋',宋体,楷体;
+                font-family: 宋体,楷体,serif;
                 color: white;
                 margin: 0 auto;
             }
             .navText 
             {
-                font-size: medium;
-                font-family: '华宋',宋体,楷体;
+                font-size:small;
+                font-family: 宋体,楷体,serif;
                 color: white;
                 margin-left: 15px;
                 margin-right: 15px;
@@ -64,12 +60,12 @@
             .navButton 
             {
                 height: 30px;
-                width: 100px;
+                width: 80px;
                 border: #E1CD92;
                 background-color: #1D3E31;
-                font-family: '华宋',宋体,楷体;
+                font-family: 宋体,楷体,serif;
                 color: white;
-                font-size: medium;
+                font-size: small;
                 margin-left: 20px;
                 border-radius: 30px;
                 font-weight: bolder;
@@ -91,6 +87,14 @@
                 box-shadow: 0px 2px 6px #CABC87;
                 margin: 0 auto;
             }
+            .tittlePicture3
+            {
+                background-color: #1D3E31;
+                width: 40%;
+                border-radius: 30px;
+                box-shadow: 0px 2px 6px #CABC87;
+                margin: 0 auto;
+            }
             .paddingText 
             {  
                 padding: 5px;
@@ -108,9 +112,9 @@
                 box-shadow: 0px 2px 6px #CABC87;
                 border: #E1CD92;
                 background-color: #1D3E31;
-                font-family: '华宋',宋体,楷体;
+                font-family: 宋体,楷体,serif;
                 color: white;
-                font-size: x-large;
+                font-size: medium;
                 margin-left: 20px;
                 margin-right: 20px;
                 margin-bottom: 20px;
@@ -119,26 +123,26 @@
             .Submit
             {
                 position: fixed;
-                right: 10px;
-                top: 140px;
-            }
-            body
-            {
-                background-image: url(../picture/homeBG.jpg);
-                background-size: 100%;
-                background-attachment: fixed;
-            }
+                right: 20px;
+                top: 150px;
+            }            
             .Andr
             {
                 position: fixed;
-                right: 10px;
-                top: 180px;
+                right: 20px;
+                top: 220px;
+            }
+            body
+            {
+                background-image: url(../picture/homeBGM.jpg);
+                background-size: 100%;
+                background-attachment: fixed;
             }
         </style>
     </head>
     <body oncontextmenu="return false">
         <div class="nav">
-            <img src="../picture/cassellSign.png" height="40px" title="卡塞尔学院" align="center">
+            <img src="../picture/cassellSign.png" height="40px" title="卡塞尔学院" align="center" id="index" onclick="ClickIndex()">
             <font class="navText">
                 卡塞尔学院 CASSELL
             </font>
@@ -168,8 +172,8 @@
             </button>
         </div>
         <img src="../picture/注册.png" class="Submit" width="40px" title="登录" onclick="ClickSubmit()">
-        <img src="../picture/网络.png" class="Andr" width="40px" title="电脑" onclick="ClickAndr()">
-        <br><br><br><br><br><br>
+        <img src="../picture/网络.png" class="Andr" width="40px" title="手机" onclick="ClickAndr()">
+        <br><br><br><br><br><br><br>
         <div align="center">
             <img src="../picture/cassellSign.png" width="30%" title="卡塞尔学院">
             <br><br>
@@ -219,10 +223,10 @@
         </div>
         <br>
         <div align="center">
-            <button class="buttonClass"  onclick="ClickO1()">
+            <button class="buttonClass"  onclick="ClickTarot()">
                 &nbsp;塔罗会&nbsp;
             </button>
-            <button class="buttonClass"  onclick="ClickO2()">
+            <button class="buttonClass"  onclick="ClickHHM()">
                 &nbsp;HHM&nbsp;
             </button>
         </div>
@@ -375,6 +379,10 @@
         </div>
         <br>
         <script type="text/javascript">
+            if (window.screen.width > 780)
+            {
+                window.open("cassellChat.html",'_self')
+            }
             document.addEventListener("keydown", function(F12)
                 {
                     if(F12.key == 'F12')
@@ -383,6 +391,10 @@
                     }
                 }
             )
+            function ClickIndex()
+            {
+                window.open("http://cassell.fun",'_self')
+            }
             function ClickInformation()
             {
                 window.open("../cassellA.html",'_self')
@@ -405,7 +417,7 @@
             }
             function ClickAndr()
             {
-                window.open("cassellChat.html",'_self')
+                window.open("cassellChatA.html",'_self')
             }
             function ClickV1()
             {
@@ -542,6 +554,10 @@
             function ClickA4()
             {
                 window.open("https://aibang.run")
+            }
+            function ClickHHM()
+            {
+                window.open("hhm.html",'_self')
             }
         </script>
     </body>
